@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('anggotas', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_angota', 9);
+            $table->string('kode_anggota', 9);
             $table->string('nama_anggota', 100);
             $table->char('jk_anggota', 1,['L','P']);
-            $table->char('jurusan_anggota', 2);
+            $table->char('jurusan_anggota', 10);
+            $table->string('no_telp_anggota',13);
             $table->string('alamat_anggota', 100);
             $table->timestamps();
         });
